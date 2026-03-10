@@ -1,0 +1,260 @@
+{
+  "qwen3.5-2b-q2_k": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q2_K",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q2_K.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 249.0,
+    "results": {
+      "performance": {
+        "prompt_tps": 0.0,
+        "generation_tps": 0.0
+      },
+      "quality": {
+        "reasoning_accuracy": 0,
+        "summary_rouge": 0.0721,
+        "instruction_recall": 0.25
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "<think>\nLet me think the question is a train travels at 60 km/h for 3 hours how far does it travel?\n\nLet me think the question is a train travels at 60 km/h for 3 hours how far does it travel?\n\nLet me think the question is a train travels at 60 km/h ...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "<think>\nLet me think about the cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the apples\nThe cost of the ...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "<think>\nLet me think about the area.\n\nThe area of the circle is the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the area of the ar...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "<think>\nLet me think the approach.\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<--\n<",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "<think>\nLet me think the question.\nThe question asks for the fuel consumption per liter.\nThe question asks for the fuel consumption per liter.\nThe question asks for the fuel consumption per liter.\nThe question asks for the fuel consumption per liter....",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "<think>\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the answer.\nLet me think the ...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "P\n\n<think>\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approach.\nLet me think the approa...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "<think>\nLet me think about the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of the number of...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "Let the input string be a string.\n\n<think>\nLet the input string be a string.\n\nLet the input string be a string.\n\nLet the input string be a string.\n\nLet the input string be a string.\n\nLet the input string be a string.\n\nLet the input string be a string...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "<think>\nLet me think the approach and solution.\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "<think>\nLet me think the approach.\n1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 10. 11. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30.",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Machine learning learns from data. Machine learning learns from data. Machine learning learns from data. Machine learning learns from data. Machine learning learns from data. Machine learning learns from data. Machine learning learns from data. Machi...",
+          "score": 0.0855,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "Climate change refers to warming due to greenhouse gases.\n\nClimate change refers to warming due to greenhouse gases.\n\nClimate change refers to warming due to greenhouse gases.\n\nClimate change refers to warming due to greenhouse gases.\n\nClimate change...",
+          "score": 0.0885,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "<think>\nLet me think of a solution:\n</think>:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolution:\n\nSolut...",
+          "score": 0.0,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "Open source software allows collaborative code development.\n\nOpen source software allows collaborative code development.\n\nOpen source software allows collaborative code development.\n\nOpen source software allows collaborative code development.\n\nOpen s...",
+          "score": 0.1143,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think of a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a solution for a...",
+          "score": 0.0,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "<think>\nLet me think of a solution.\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nSolu...",
+          "score": 0.0,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think of a solution that is sustainable.\n\nThinking of a solution that is sustainable.\n\nThinking of a solution that is sustainable.\n\nThinking of a solution that is sustainable.\n\nThinking of a solution that is sustainable.\n\nThinking of a...",
+          "score": 0.3333,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think of the database index.\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<\n<",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  },
+  "qwen3.5-2b-q3_k_s": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q3_K_S",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q3_K_S.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 325.28,
+    "results": {
+      "performance": {
+        "prompt_tps": 0.0,
+        "generation_tps": 0.0
+      },
+      "quality": {
+        "reasoning_accuracy": 0.6667,
+        "summary_rouge": 0.0876,
+        "instruction_recall": 0.5625
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: A train travels at 60 km/h for 3 hours how far does it travel?\n\nApproach: 1. Understand the problem\n- We need to calculate distance traveled\n- Given: speed = 60 km/h, time = 3 ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "To find the total cost, multiply the price per item by the number of items purchased.\n\n1. Identify the price per apple: $2 per apple.\n2. Identify the number of apples bought: 7 apples.\n3. Multiply the price by the quantity: $2 \u00d7 7 = $14.\n\n**Final Ans...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "Area = 8 * 5 = 40\n\n**2. Find the area of a rectangle with length 8 and width 5.**\n\nAnswer: 40\n\n**3. Find the area of a rectangle with length 8 and width 5.**\n\nAnswer: 40\n\n**4. Find the area of a rectangle with length 8 and width 5.**\n\nAnswer: 40\n\n**5...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "<think>\nLet me analyze this problem step by step.\n\n1. **Initial State:**\n   - John has 12 marbles\n   - This is the starting point before any action occurs\n\n2. **Action 1: Gives away 5 marbles**\n   - John gives away 5 marbles\n   - Number of marbles re...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n1. Read the input string.\n2. Parse the string to extract the distance (150 km) and fuel (10 liters).\n3. Calculate the fuel consumption per kilometer.\n4. Print the result.\n</think>\n\nTo ca...",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "<think>\nLet me analyze this problem step by step.\n\n**Problem:** 3 workers build wall in 6 hours. Time for 6 workers?\n\n**Solution:**\n\n1. **Identify the given information:**\n   - 3 workers can build a wall in 6 hours\n   - Need to find how long it would...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "<think>\nThe user is asking for a Python function to calculate the factorial of a number. This is a classic example of a recursive function.\n\nLet me think about the approach:\n1. Base case: 0! = 1\n2. Recursive case: n! = n \u00d7 (n-1)!\n\nI'll implement this...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "<think>\nThe user wants a Python function to check if a string is a palindrome.\n\n1.  **Analyze the Request:**\n    *   **Goal:** Check if a string is a palindrome.\n    *   **Language:** Python.\n    *   **Key Concept:** Palindrome (reads the same forwar...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "<think>\nThe user is asking for a Python function to find the largest number in a list. This is a straightforward programming task.\n\nLet me think about the approach:\n1. I'll use the built-in `max()` function with a generator expression to avoid creati...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "The function should take a string as input and return the count of vowels.\nVowels are defined as a, e, i, o, u, y.\nThe function should also handle the case when the string is empty.\nThe function should also handle the case when the string contains on...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "<think>\nThe user wants a Python function to remove duplicates from a list.\n1.  **Identify the core requirement:** Remove duplicates from a list.\n2.  **Determine the approach:**\n    *   *Method 1: Using a Set.* The most efficient and standard way. Set...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "<think>\nThe user wants a Python function to generate the Fibonacci sequence.\n1.  **Identify the core logic:** The Fibonacci sequence is defined by the recurrence relation $F_n = F_{n-1} + F_{n-2}$.\n2.  **Choose a method:**\n    *   *Iterative approach...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Neural networks are a type of machine learning. Neural networks are used to solve complex problems.\n\n<think>\nLet me analyze this request carefully. The user is asking me to summarize a set of statements about artificial intelligence, machine learning...",
+          "score": 0.1651,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "The warming is caused by the burning of fossil fuels, deforestation, and industrial processes. The warming is caused by the use of nuclear power plants. The warming is caused by the use of nuclear power plants. The warming is caused by the use of nuc...",
+          "score": 0.065,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "It is a tool for connecting people from different cultures, religions, and political systems. It is a tool for sharing knowledge and ideas. It is a tool for promoting peace and understanding. It is a tool for building trust and resolving conflicts. I...",
+          "score": 0.0331,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "This is a key feature of open source software.\n\n<think>\nLet me analyze this request carefully. The user is asking me to \"summarize\" a statement about open source software, but the statement itself is already in a very concise form. The statement is: ...",
+          "score": 0.087,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: five machine learning uses in healthcare.\n\nMy reasoning: Machine Learning in Healthcare\n\nHere are five distinct and impactful uses of machine learning in healthcare:\n\n1. Me...",
+          "score": 0.25,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "<think>\nLet me think about how to approach this question.\n\n1. The user is asking me to explain overfitting in machine learning. This is a conceptual question about a well-known phenomenon in ML.\n\n2. Overfitting is a fundamental concept in machine lea...",
+          "score": 0.3333,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think about how to approach this question. The question/task is: Advantages of renewable energy. The reasoning is: Renewable energy sources are the future of energy. They are clean, sustainable, and do not deplete. They are also cost-e...",
+          "score": 1.0,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think about how to approach this question.\n\n1.  **Understand the Request:** The user is asking for an explanation of a \"database index.\" This is a fundamental concept in computer science and database management. The goal is to provide ...",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  }
+}

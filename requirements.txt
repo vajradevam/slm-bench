@@ -1,0 +1,5 @@
+llama-cpp-python
+psutil 
+rouge-score
+py-cpuinfo
+requests
