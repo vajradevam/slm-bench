@@ -173,16 +173,39 @@ def run_llama_bench(model_path):
     gen_tps = 0.0
     
     try:
+        # llama-bench JSON output is an array of result objects.
+        # Each object has:
+        #   "n_prompt": number of prompt tokens processed (>0 = prompt-processing test)
+        #   "n_gen":    number of tokens generated      (>0 = generation test)
+        #   "avg_ts":   average throughput in tokens/sec
+        # A pure prompt-processing run has n_gen == 0; a pure generation run has n_prompt == 0.
         json_start = out.find('[')
         if json_start != -1:
             data = json.loads(out[json_start:])
             for item in data:
-                tname = item.get("test_name", item.get("test", ""))
-                avg_ts = item.get("avg_ts", 0)
-                if "pp" in tname: prompt_tps = avg_ts
-                elif "tg" in tname: gen_tps = avg_ts
-    except:
-        pass
+                avg_ts   = item.get("avg_ts", 0) or 0
+                n_prompt = item.get("n_prompt", 0) or 0
+                n_gen    = item.get("n_gen", 0)    or 0
+
+                if n_prompt > 0 and n_gen == 0:
+                    # Prompt-processing (pp) test
+                    prompt_tps = avg_ts
+                elif n_gen > 0 and n_prompt == 0:
+                    # Token-generation (tg) test
+                    gen_tps = avg_ts
+
+            # Fallback: some builds expose a "test" string like "pp512" / "tg128"
+            if prompt_tps == 0.0 and gen_tps == 0.0:
+                for item in data:
+                    avg_ts = item.get("avg_ts", 0) or 0
+                    tname  = item.get("test", item.get("test_name", ""))
+                    if tname.startswith("pp"):
+                        prompt_tps = avg_ts
+                    elif tname.startswith("tg"):
+                        gen_tps = avg_ts
+
+    except Exception as e:
+        print(f"Bench parse error: {e}\nRaw output:\n{out[:500]}")
         
     return prompt_tps, gen_tps
 

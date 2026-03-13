@@ -13,11 +13,11 @@
       "os": "Linux",
       "python_version": "3.12.8"
     },
-    "benchmark_duration_sec": 249.0,
+    "benchmark_duration_sec": 248.26,
     "results": {
       "performance": {
-        "prompt_tps": 0.0,
-        "generation_tps": 0.0
+        "prompt_tps": 77.8,
+        "generation_tps": 15.96
       },
       "quality": {
         "reasoning_accuracy": 0,
@@ -142,11 +142,11 @@
       "os": "Linux",
       "python_version": "3.12.8"
     },
-    "benchmark_duration_sec": 325.28,
+    "benchmark_duration_sec": 312.06,
     "results": {
       "performance": {
-        "prompt_tps": 0.0,
-        "generation_tps": 0.0
+        "prompt_tps": 41.03,
+        "generation_tps": 14.3
       },
       "quality": {
         "reasoning_accuracy": 0.6667,
@@ -251,6 +251,522 @@
         },
         "I4": {
           "output": "<think>\nLet me think about how to approach this question.\n\n1.  **Understand the Request:** The user is asking for an explanation of a \"database index.\" This is a fundamental concept in computer science and database management. The goal is to provide ...",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  },
+  "qwen3.5-2b-q3_k_m": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q3_K_M",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q3_K_M.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 277.87,
+    "results": {
+      "performance": {
+        "prompt_tps": 55.86,
+        "generation_tps": 14.52
+      },
+      "quality": {
+        "reasoning_accuracy": 1,
+        "summary_rouge": 0.129,
+        "instruction_recall": 0.5
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "Distance = Speed \u00d7 Time = 60 \u00d7 3 = 180 km\n\n**2. A train travels at 60 km/h for 3 hours how far does it travel?**\nAnswer: Distance = Speed \u00d7 Time = 60 \u00d7 3 = 180 km\n\n**3. A train travels at 60 km/h for 3 hours how far does it travel?**\nAnswer: Distance...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "To find the total cost, multiply the price per apple by the number of apples purchased.\n\n$$\n\\text{Total Cost} = \\text{Price per Apple} \\times \\text{Number of Apples}\n$$\n\nSubstitute the given values:\n\n$$\n\\text{Total Cost} = 2 \\times 7 = 14\n$$\n\nTherefo...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "Area = 8 * 5 = 40 square units.\n\n**2. Question:** What is the area of a rectangle with length 8 and width 5?\n**Solution:** Area = 8 * 5 = 40 square units.\n\n**3. Question:** What is the area of a rectangle with length 8 and width 5?\n**Solution:** Area...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "12 - 5 + 8 = 15\n\n**2. A man has 100 dollars. He buys a car for 50 dollars. He sells it for 100 dollars. How much profit does he make?**\n\nAnswer: 100 - 50 = 50\n\n**3. A man has 100 dollars. He buys a car for 50 dollars. He sells it for 100 dollars. How...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "150/10 = 15 km/liter\n\n**2. A car travels 150 km with 10 liters fuel. Km per liter?**\n\nAnswer: 150/10 = 15 km/liter\n\n**3. A car travels 150 km with 10 liters fuel. Km per liter?**\n\nAnswer: 150/10 = 15 km/liter\n\n**4. A car travels 150 km with 10 liters...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "To find the time for 6 workers, we can use the formula: Time = (Number of Workers \u00d7 Number of Hours) / Number of Workers. Time = (6 \u00d7 6) / 6 = 6 hours.\n\n**2. 2 workers build wall in 10 hours. Time for 3 workers?**\n\n2 workers build wall in 10 hours. T...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function factorial.\n\nApproach: 1: Iterative approach\n- Initialize result = 1\n- Loop from 1 to n\n- Multiply result by i\n- Return result\n\nApproach 2: Recursive appro...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "<think>\nLet me think about how to approach this problem.\n\nProblem: Write python function palindrome check.\n\nApproach: 1. Read the input string\n2. Reverse the string\n3. Compare the original string with the reversed string\n4. Return True if they match,...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function largest number in list.\n\nApproach: 1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "- Input: string\n- Output: number of vowels\n- Constraints: 1 <= length of string <= 1000\n\n<think>\nLet me think about how to approach this coding problem.\n\nProblem: count vowels.\n- Input: string\n- Output: number of vowels\n- Constraints: 1 <= length of ...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Remove duplicates from a list of integers.\n\nApproach 1: Using a Set\nThe most efficient approach is to use a set (hashable collection) to store unique elements.\n\nApproach 2: Usi...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function fibonacci sequence.\n\nApproach: 1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n2",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Deep learning uses neural networks to mimic human cognition. Natural language processing (NLP) is a subset of AI that enables machines to understand and generate human language. Computer vision is a subset of AI that allows machines to interpret visu...",
+          "score": 0.1782,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: Summarize: Climate change refers to warming due to greenhouse gases.\n\nMy reasoning: The provided text is a one-sentence definition. It states that \"Climate change\" is defin...",
+          "score": 0.1224,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "It is a tool for connecting people across borders, facilitating the exchange of ideas, culture, and knowledge. It is also a platform for business, allowing companies to reach international markets and collaborate with partners worldwide.\n\n<think>\nLet...",
+          "score": 0.1034,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: Summarize: Open source software allows collaborative code development.\n\nMy reasoning: The task is to summarize the given text. The text is: Open source software allows coll...",
+          "score": 0.1121,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: List five machine learning uses in healthcare.\n\nMy reasoning: Here are five machine learning applications in healthcare:\n\n1. Medical Image Analysis\n- Radiology: AI systems ...",
+          "score": 0.0,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "Overfitting occurs when a model learns the training data too well, including the noise, and performs poorly on unseen data. This happens because the model is too complex and has too many parameters to fit the training data.\n\nWhat is the difference be...",
+          "score": 0.6667,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: List advantages of renewable energy.\n\nMy reasoning: Renewable energy sources are those that are replenished naturally on a human timescale. This means they are sustainable ...",
+          "score": 0.6667,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: Explain database index.\n\nMy reasoning: Database Index\n\nWhat is an Index?\n\nAn index is a data structure that allows for faster retrieval of data from a database. It's essent...",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  },
+  "qwen3.5-2b-q3_k_l": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q3_K_L",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q3_K_L.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 288.57,
+    "results": {
+      "performance": {
+        "prompt_tps": 47.93,
+        "generation_tps": 14.88
+      },
+      "quality": {
+        "reasoning_accuracy": 0.8333,
+        "summary_rouge": 0.098,
+        "instruction_recall": 0.6459
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "To find the distance traveled, we use the formula: Distance = Speed \u00d7 Time. Given the speed is 60 km/h and the time is 3 hours, the distance is 60 \u00d7 3 = 180 km.\n\n**2. A train travels at 60 km/h for 3 hours how far does it travel?**\n\nA train travels a...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "To find the total cost, multiply the price per apple by the number of apples purchased.\n\n$$\n\\text{Total Cost} = \\text{Price per Apple} \\times \\text{Number of Apples}\n$$\n\nSubstitute the given values:\n\n$$\n\\text{Total Cost} = 2 \\times 7 = 14\n$$\n\nTherefo...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "Area = 8 * 5 = 40\n\n**2. Rectangle length 8 width 5. What is the perimeter?**\nAnswer: Perimeter = 2 * (length + width) = 2 * (8 + 5) = 24\n\n**3. Rectangle length 8 width 5. What is the area?**\nAnswer: Area = 8 * 5 = 40\n\n**4. Rectangle length 8 width 5....",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "12 - 5 + 8 = 15\n\n**2. John has 12 marbles gives 5 away then buys 8 more. How many now?**\nAnswer: 12 - 5 + 8 = 15\n\n**3. John has 12 marbles gives 5 away then buys 8 more. How many now?**\nAnswer: 12 - 5 + 8 = 15\n\n**4. John has 12 marbles gives 5 away t...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "150/10 = 15 km/liter\n\n**2. Question:** A car travels 150 km with 10 liters fuel. Km per liter?\nAnswer: 150/10 = 15 km/liter\n\n**3. Question:** A car travels 150 km with 10 liters fuel. Km per liter?\nAnswer: 150/10 = 15 km/liter\n\n**4. Question:** A car...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "To find the time for 6 workers, we can use the formula: Time = (Number of Workers) / (Number of Workers per Hour). So, Time = 6 / 6 = 1 hour.\n\n**2. A 10000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "score": 0,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function factorial.\n\nApproach: 1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n28",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function palindrome check.\n\nApproach: 1. Read the input string\n2. Reverse the string\n3. Compare the original string with the reversed string\n4. Return True if they...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function largest number in list.\n\nApproach: 1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function count vowels.\n\nApproach: count vowels\n\nLet me implement this solution.\n</think>\n\nHere is the Python code to count vowels.\n\n```python\ndef count_vowels(text...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Remove duplicates from a list.\n\nApproach: 1: Using a Set (Most Pythonic)\n\nThe most Pythonic approach is to use a set, since sets only contain unique elements.\n\n```python\ndef re...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function fibonacci sequence.\n\nApproach: 1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.\n12.\n13.\n14.\n15.\n16.\n17.\n18.\n19.\n20.\n21.\n22.\n23.\n24.\n25.\n26.\n27.\n2",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Deep learning uses neural networks to mimic human cognition. Natural language processing (NLP) is a subset of AI that enables machines to understand and generate human language. Computer vision is another subset of AI that allows machines to interpre...",
+          "score": 0.0345,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question/task: Summarize: Climate change refers to warming due to greenhouse gases.\n\nMy reasoning: The statement \"Climate change refers to warming due to greenhouse gases\" is a concise and accurate de...",
+          "score": 0.1154,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question/task: Summarize: Internet enables global communication and information access.\n\nMy reasoning: The Internet is a global network that connects people, organizations, and devices worldwide. It s...",
+          "score": 0.1277,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question/task: Summarize: Open source software allows collaborative code development.\n\nMy reasoning: The request asks for a summary of the statement \"Open source software allows collaborative code dev...",
+          "score": 0.1143,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question/task: List five machine learning uses in healthcare.\n\nMy reasoning: Here are five machine learning applications in healthcare:\n\n1. Medical Image Analysis\n- Radiology: AI systems analyze CT sc...",
+          "score": 0.25,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "Overfitting occurs when a model learns the training data too well, including the noise and random fluctuations in the data. This results in a model that performs well on training data but poorly on new, unseen data.\n\nWhat is the difference between ov...",
+          "score": 0.6667,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question/task: List advantages of renewable energy.\n\nMy reasoning: Renewable energy sources have numerous benefits that make them increasingly important for sustainable energy systems. Here are the ke...",
+          "score": 1.0,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think about how to approach this question.\n\nThe question/task: Explain database index.\n\nMy reasoning: Database Index\n\nWhat is an Index?\n\nAn index is a data structure that allows for faster retrieval of data from a database. It's essent...",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  },
+  "qwen3.5-2b-q4_k_s": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q4_K_S",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q4_K_S.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 247.29,
+    "results": {
+      "performance": {
+        "prompt_tps": 116.85,
+        "generation_tps": 14.75
+      },
+      "quality": {
+        "reasoning_accuracy": 1,
+        "summary_rouge": 0.0927,
+        "instruction_recall": 0.5625
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "To find the distance traveled, we use the formula: Distance = Speed \u00d7 Time. Given the speed is 60 km/h and the time is 3 hours, the distance is 60 \u00d7 3 = 180 km.\n\nIf a train travels at 60 km/h for 3 hours how far does it travel?\n\nThe distance traveled...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "To find the total cost, multiply the price per apple by the number of apples bought.\n\n1. Identify the price per apple: $2.\n2. Identify the number of apples: 7.\n3. Multiply the price by the quantity: $2 \\times 7 = 14$.\n\nThe total amount paid is $14.",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "Area = 8 x 5 = 40 square units.\n\n**Pair 2:**\nRectangle length 10 width 6. What is the area?\nAnswer: Area = 10 x 6 = 60 square units.\n\n**Pair 3:**\nRectangle length 12 width 4. What is the area?\nAnswer: Area = 12 x 4 = 48 square units.\n\n**Pair 4:**\nRec...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "12 - 5 + 8 = 15\n\n**2. Question:** John has 12 marbles gives 5 away then buys 8 more. How many now?\n**Answer:** 15\n\n**3. Question:** John has 12 marbles gives 5 away then buys 8 more. How many now?\n**Answer:** 15\n\n**4. Question:** John has 12 marbles ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "150/10 = 15 km per liter.\n\n**2. Problem 2:**\nA car travels 150 km with 10 liters fuel. Km per liter?\nAnswer: 150/10 = 15 km per liter.\n\n**3. Problem 3:**\nA car travels 150 km with 10 liters fuel. Km per liter?\nAnswer: 150/10 = 15 km per liter.\n\n**4. ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "Let\u2019s break this down step by step.\n\n**1. Understand the given information**\n- 3 workers build a wall in 6 hours.\n- We need to find how long it takes for 6 workers to build the same wall.\n\n**2. Set up the relationship**\nThe total work done is constan...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, 5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120.\n\nHere is the Python function to calculate the factorial:\n\n```python\ndef factorial(n):\n    # Check if...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "palindrome check\n\nHere is the step-by-step reasoning and the Python code to solve the problem.\n\n### Reasoning\n\n1.  **Understand the Goal**: We need to determine if a string reads the same forwards and backwards.\n2.  **Identify the Approach**:\n    *  ...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Analyze the Input**: We are given a list of numbers (e.g., `[3, 7, 1, 9, 2]`).\n2.  **Determine the Goal**: We need to find the maximum value among the...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Analyze the Input**: The function receives a string (e.g., \"Hello\").\n2.  **Define Vowels**: The standard set of vowels in English is 'a', 'e', 'i', 'o...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Understand the Goal**: We need to take a list of numbers (or strings) and return a new list containing only the unique elements, preserving the order ...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "Here is the step-by-step reasoning and the Python code to generate the Fibonacci sequence.\n\n### Reasoning\n\n1.  **Understand the Definition**: The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding numbers.\n   ...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Deep learning is a subset of machine learning that uses neural networks to mimic human brain functions. Neural networks are a type of artificial intelligence that can learn from data.\n\n<think>\nLet me analyze this text to understand what needs to be s...",
+          "score": 0.1636,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "It is a global phenomenon. It is a human-caused phenomenon. It is a phenomenon that is irreversible. It is a phenomenon that is irreversible. It is a phenomenon that is irreversible. It is a phenomenon that is irreversible. It is a phenomenon that is...",
+          "score": 0.0336,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "It also enables the creation of new technologies and products. It also enables the creation of new jobs and industries. It also enables the creation of new ideas and concepts. It also enables the creation of new markets and businesses. It also enable...",
+          "score": 0.0323,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Summarize: Open source software allows collaborative code development.\n\nLet me implement this solution.\n</think>\n\n# Summary: Open Source Software\n\n## Key Points\n\n**Definition**...",
+          "score": 0.1412,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: List five machine learning uses in healthcare.\n\nApproach: I'll create a comprehensive list of five distinct machine learning applications in healthcare, explaining each one wit...",
+          "score": 0.25,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, resulting in poor generalization to unseen data.\n\nWhat is the relationship between the number of parameters and the number of traini...",
+          "score": 1.0,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question asks for advantages of renewable energy. This is a straightforward factual question about energy systems. I need to identify the key benefits that make renewable energy attractive compared to...",
+          "score": 0.3333,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Explain database index.\n\nApproach: Database Index\n\nWhat is a Database Index?\n\nA database index is a data structure that improves the speed of data retrieval operations on a dat...",
+          "score": 0.6667,
+          "type": "recall"
+        }
+      }
+    }
+  },
+  "qwen3.5-2b-q4_k_m": {
+    "meta": {
+      "params": "2B",
+      "quant": "Q4_K_M",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/resolve/main/Qwen3.5-2B.Q4_K_M.gguf"
+    },
+    "system": {
+      "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+      "cores_physical": 4,
+      "cores_logical": 8,
+      "ram_gb": 15.17,
+      "os": "Linux",
+      "python_version": "3.12.8"
+    },
+    "benchmark_duration_sec": 295.26,
+    "results": {
+      "performance": {
+        "prompt_tps": 70.76,
+        "generation_tps": 13.06
+      },
+      "quality": {
+        "reasoning_accuracy": 1,
+        "summary_rouge": 0.1568,
+        "instruction_recall": 0.6459
+      },
+      "detailed_results": {
+        "R1": {
+          "output": "Distance = Speed \u00d7 Time\nDistance = 60 km/h \u00d7 3 hours\nDistance = 180 km\n\n**2.**\nIf a train travels at 60 km/h for 3 hours how far does it travel?\nAnswer: 180 km\n\n**3.**\nIf a train travels at 60 km/h for 3 hours how far does it travel?\nAnswer: 180 km\n\n...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R2": {
+          "output": "To find the total cost, multiply the price per apple by the number of apples purchased.\n\n1. Identify the price per apple: $2.\n2. Identify the number of apples bought: 7.\n3. Multiply the price by the quantity: $2 \\times 7 = 14$.\n\nTherefore, the total ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R3": {
+          "output": "Area = 8 x 5 = 40 square units.\n\n**Pair 2:**\nRectangle length 10 width 6. What is the area?\nAnswer: Area = 10 x 6 = 60 square units.\n\n**Pair 3:**\nRectangle length 12 width 4. What is the area?\nAnswer: Area = 12 x 4 = 48 square units.\n\n**Pair 4:**\nRec...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R4": {
+          "output": "12 - 5 + 8 = 15\n\n**2. Question:** John has 12 marbles gives 5 away then buys 8 more. How many now?\n**Answer:** 15\n\n**3. Question:** John has 12 marbles gives 5 away then buys 8 more. How many now?\n**Answer:** 15\n\n**4. Question:** John has 12 marbles ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R5": {
+          "output": "150 km / 10 liters = 15 km per liter.\n\n**2. Car travels 150 km with 10 liters fuel. Km per liter?**\n\n150 km / 10 liters = 15 km per liter.\n\n**3. Car travels 150 km with 10 liters fuel. Km per liter?**\n\n150 km / 10 liters = 15 km per liter.\n\n**4. Car ...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "R6": {
+          "output": "Let\u2019s break this down step by step.\n\n**1. Understand the relationship between workers and time**\n- 3 workers take 6 hours to build the wall.\n- This means the total amount of work required is:\n  $$3 \\text{ workers} \\times 6 \\text{ hours} = 18 \\text{ w...",
+          "score": 1,
+          "type": "accuracy"
+        },
+        "C1": {
+          "output": "The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, 5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120.\n\nHere is the Python function to calculate the factorial:\n\n```python\ndef factorial(n):\n    # Check if...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C2": {
+          "output": "palindrome check\n\nHere is the step-by-step reasoning and the Python code to solve the palindrome check problem.\n\n### Step-by-Step Reasoning\n\n1.  **Understand the Goal**: A palindrome is a string that reads the same forwards and backwards (e.g., \"race...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C3": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Analyze the Input**: We are given a list of numbers (integers or floats).\n2.  **Identify the Goal**: We need to find the maximum value among these num...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C4": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Identify the Goal**: The objective is to count the occurrences of specific characters (vowels) within a given string.\n2.  **Define Vowels**: The stand...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C5": {
+          "output": "Here is the step-by-step reasoning and the Python code to solve this problem.\n\n### Reasoning\n\n1.  **Understand the Goal**: The objective is to take a list of numbers (or strings) and return a new list containing only the unique elements, preserving t...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "C6": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Write python function fibonacci sequence.\n\nApproach: 1.\n</think>\n\n# Fibonacci Sequence in Python\n\n## Understanding the Fibonacci Sequence\n\nThe Fibonacci sequence is a series of...",
+          "score": 0.0,
+          "type": "unknown"
+        },
+        "S1": {
+          "output": "Deep learning is a subset of machine learning that uses neural networks to mimic human brain functions. Neural networks are a type of artificial intelligence that can learn from data.\n\n<think>\nLet me analyze this text to identify the key concepts and...",
+          "score": 0.1682,
+          "type": "rougeL"
+        },
+        "S2": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Summarize: Climate change refers to warming due to greenhouse gases.\n\nLet me implement this solution.\n</think>\n\n# Summary of Climate Change\n\n## Analysis\n\nThe statement \"Climate...",
+          "score": 0.1628,
+          "type": "rougeL"
+        },
+        "S3": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Summarize: Internet enables global communication and information access.\n\nApproach: 1. Identify the core components of the statement\n- Subject: Internet\n- Key capabilities: glo...",
+          "score": 0.1319,
+          "type": "rougeL"
+        },
+        "S4": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Summarize: Open source software allows collaborative code development.\n\nLet me implement this solution.\n</think>\n\n# Summary: Open Source Software\n\n## Key Points\n\n| Aspect | Des...",
+          "score": 0.1644,
+          "type": "rougeL"
+        },
+        "I1": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question asks for five machine learning uses in healthcare. This is a straightforward factual question about applications of ML in medical domains. I need to provide accurate, well-known applications ...",
+          "score": 0.25,
+          "type": "recall"
+        },
+        "I2": {
+          "output": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, resulting in poor generalization to unseen data.\n\nWhat is the relationship between model complexity and overfitting?\n\nThere is a dir...",
+          "score": 1.0,
+          "type": "recall"
+        },
+        "I3": {
+          "output": "<think>\nLet me think through this carefully.\n\nThe question asks for advantages of renewable energy. This is a straightforward factual question about energy systems. I need to identify the key benefits that make renewable energy attractive compared to...",
+          "score": 0.6667,
+          "type": "recall"
+        },
+        "I4": {
+          "output": "<think>\nLet me think about how to approach this coding problem.\n\nProblem: Explain database index.\n\nLet me implement this solution.\n</think>\n\n# Database Index\n\n## Understanding Indexes\n\nA **database index** is a specialized data structure that improve...",
           "score": 0.6667,
           "type": "recall"
         }
